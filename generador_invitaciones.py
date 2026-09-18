@@ -6,18 +6,36 @@ def generar_invitacion(nombre_fichero : str,
                        nombre_imagen : str,
                        fecha : str,
                        direccion : str):
+    """
+    Genera una invitación para una fiesta y la guarda como archivo PDF.
+
+    La invitación incluye un marco decorativo, una imagen asociada al evento,
+    el tipo de evento, la fecha y la dirección.
+
+    Args:
+        nombre_fichero (str): Nombre y ruta del archivo PDF que se generará.
+        tipo_evento (str): Tipo de evento o fiesta que aparecerá en la invitación.
+        nombre_imagen (str): Nombre o ruta de la imagen que se incluirá.
+        fecha (str): Fecha del evento que se mostrará en la invitación.
+        direccion (str): Dirección donde tendrá lugar el evento.
+
+    Returns:
+        None: La función genera y guarda el archivo PDF, pero no devuelve ningún valor.
+
+    Raises:
+        FileNotFoundError: Si no se encuentra la imagen especificada.
+        OSError: Si ocurre un error al crear o guardar el archivo PDF.
+    """
     
     # Tamaño
     canvas = Canvas(nombre_fichero, pagesize=(20 * cm, 12 * cm))
 
     canvas.drawImage(
-    "frame.png",
-    x=-20,
-    y=-10,
-    width=608,
-    height=370,
-    preserveAspectRatio=False,
-    mask="auto")
+        "frame.png",
+        x=-20, y=-10,
+        width=608, height=370,
+        preserveAspectRatio=False,
+        mask="auto")
 
     canvas.drawImage(
         nombre_imagen,
