@@ -1,5 +1,5 @@
 from reportlab.pdfgen.canvas import Canvas
-from reportlab.lib.units import cm, inch
+from reportlab.lib.units import cm
 
 def generar_invitacion(nombre_fichero : str, 
                        tipo_evento : str,
