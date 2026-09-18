@@ -47,7 +47,7 @@ def generar_invitacion(nombre_fichero : str,
     canvas.setFont("Times-Roman", 24)
     canvas.drawString(70, 250, 'ESTÁS INVITADO A UNA FIESTA DE..')
     canvas.setFont("Times-Roman", 48)
-    canvas.drawString(140, 200, tipo_evento.upper())
+    canvas.drawCentredString(285, 200, tipo_evento.upper())
 
     canvas.setFont("Times-Roman", 20)
     canvas.drawString(50, 60, fecha)

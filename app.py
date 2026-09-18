@@ -13,4 +13,4 @@ generador_invitaciones.generar_invitacion(
 
 # generador_invitaciones.generar_invitacion(
 #     'despedida.pdf',
-#     'Despedida', None, '17-10-2026', 'Pub La Movida. C/ Desengaño, 15')
+#     'Boda', 'party.jpg', '17-10-2026', 'Pub La Movida. C/ Desengaño, 15')
